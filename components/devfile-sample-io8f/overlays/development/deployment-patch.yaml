@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-io8f
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0052-tenant/ci10t-777-0052-app/devfile-sample-io8f@sha256:23288e618578807db8366a6608ba001c0fc05f6a801a51f2934843dd60e4a142
+        name: my-nodejs
+        resources: {}
+status: {}
